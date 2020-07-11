@@ -1,0 +1,162 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap";
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+:root{
+    --color-green:#50fa7b;
+    --color-white:whitesmoke;
+    --color-rocket: #7159c1;
+    --color-bg: #282a36;
+}
+
+body{
+    background-color: var(--color-bg);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: var(--color-white);
+}
+
+.links,
+.links-redes{
+    padding: 30px;
+    text-align: center;
+}
+
+.links a{
+    color:var(--color-white);
+    text-decoration: none;
+    margin: 0 30px;
+    transition: color 700ms;
+}
+
+/*SOBRE*/
+
+.contaneir{
+    text-align: center;
+}
+
+.img-content img{
+    border: 1px solid var(--color-green);
+    border-radius: 50%;
+    height: 250px;
+}
+
+.contaneir h1{
+    color: var(--color-green);
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.contaneir p{
+    padding: 20px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.links-redes a{
+    color:var(--color-white);
+    text-decoration: none;
+    margin: 0 30px;
+    transition: color 700ms;
+}
+
+.links-redes a:hover{
+    color: var(--color-green);
+}
+
+/*PAGINA CURSOS*/
+
+.wrapper{
+    text-align: center;
+}
+
+.wrapper h1{
+    font-weight: lighter;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.cards{
+    height: 700px;
+    text-align: center;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card-content{
+    border: 1px solid var(--color-white);
+    border-radius: 25px;
+    margin: 0 auto;
+    width: 70%;
+    height: 70%;
+}
+
+.img-curse{
+    margin: 100px auto 0;
+}
+
+.img-content img{
+    height: 500px;
+}
+
+.card-content h2{
+    font-size: 0;
+}
+
+.descritpion{
+    margin-top: 10vh;
+    color: var(--color-rocket);
+}
+
+.card-content:hover{
+    border: 1px solid var(--color-green);
+    cursor: pointer;
+}
+
+/*MODAL*/
+
+.modal-overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-content{
+    background-color: var(--color-white);
+    height: 90%;
+    width: 100%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.close-modal{
+    color: var(--color-rocket);
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.modal-content iframe{
+    margin: 0 auto;
+    width: 95%;
+    height: 100%;
+}
+
+
+/*MODAL ACTIVE*/
+
+.modal-overlay.active{
+    opacity: 1;
+    visibility: visible;
+}

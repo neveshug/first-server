@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+
+        {% block head %}
+            <title>Desafio 03-01</title>
+        {% endblock %}
+    </head>
+    <body>
+        <header class="links">
+            <a href="/">Sobre</a>
+            <a href="/courses">Conteudo</a>
+        </header>
+
+        {% block content%}{% endblock %}
+
+        <div class="links-redes">
+            <a href="https://www.github.com/rocketseat" target="_blank">Github</a>
+            <a href="https://www.linkedin.com/rocketseat" target="_blank">LinkedIn</a>
+            <a href="https://www.fb.com/rocketseat" target="_blank">Facebook</a>
+        </div>
+    </body>
+</html>

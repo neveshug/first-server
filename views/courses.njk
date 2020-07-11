@@ -1,0 +1,62 @@
+{% extends "layout.njk"%}
+
+{% block head%}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Desafio 03-1 | Courses</title>
+{% endblock %}
+
+{% block content%}
+
+<div class="wrapper">
+    <h1>Cursos Rocketseat</h1>
+</div>
+
+<section class="cards">
+
+    <div class="card-content" id="starter">
+        <div class="img-curse">
+            <img src="assets/starter.svg" alt="starter">
+        </div>
+        <h2>Starter</h2>
+        <div class="descritpion">
+            <p>10 módulos</p>
+            <p class="price">Free</p>
+        </div>
+    </div>
+
+    <div class="card-content" id="launchbase">
+        <div class="img-curse">
+            <img src="assets/launchbase.svg" alt="starter">
+        </div>
+        <h2>Starter</h2>
+        <div class="descritpion">
+            <p>10 módulos</p>
+            <p class="price">Pay</p>
+        </div>
+    </div>
+
+    <div class="card-content" id="gostack">
+        <div class="img-curse">
+            <img src="assets/goStack.svg" alt="starter">
+        </div>
+        <h2>Starter</h2>
+        <div class="descritpion">
+            <p>10 módulos</p>
+            <p class="price">Pay</p>
+        </div>
+    </div>
+
+</section>
+
+<div class="modal-overlay">
+    <div class="modal-content">
+        <div class="close-modal">
+            <i class="material-icons"> cancel </i>
+        </div>
+        <iframe src="" frameborder="0"></iframe>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+{% endblock %}
