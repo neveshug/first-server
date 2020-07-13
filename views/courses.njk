@@ -7,56 +7,39 @@
 
 {% block content%}
 
-<div class="wrapper">
-    <h1>Cursos Rocketseat</h1>
-</div>
+    <div class="wrapper">
+        <h1>Cursos Rocketseat</h1>
+    </div>
 
-<section class="cards">
+    <section class="cards">
+        {% for item in items %}
 
-    <div class="card-content" id="starter">
-        <div class="img-curse">
-            <img src="assets/starter.svg" alt="starter">
-        </div>
-        <h2>Starter</h2>
-        <div class="descritpion">
-            <p>10 módulos</p>
-            <p class="price">Free</p>
+            <div class="card-content" id="{{item.id}}">
+                <div class="img-curse">
+                    <img src="assets/{{item.id}}.svg" alt="Curso {{item.name}}">
+                </div>
+                <h2>{{item.name}}</h2>
+                <div class="descritpion">
+                    <p>{{item.description}}</p>
+                    <p class="price">{{item.price}}</p>
+                </div>
+            </div>
+
+        {% endfor %}
+
+    </section>
+
+    <div class="modal-overlay">
+        <div class="modal-content">
+            <div class="close-modal">
+                <i class="material-icons">
+                    cancel
+                </i>
+            </div>
+            <iframe src="" frameborder="0"></iframe>
         </div>
     </div>
 
-    <div class="card-content" id="launchbase">
-        <div class="img-curse">
-            <img src="assets/launchbase.svg" alt="starter">
-        </div>
-        <h2>Starter</h2>
-        <div class="descritpion">
-            <p>10 módulos</p>
-            <p class="price">Pay</p>
-        </div>
-    </div>
-
-    <div class="card-content" id="gostack">
-        <div class="img-curse">
-            <img src="assets/goStack.svg" alt="starter">
-        </div>
-        <h2>Starter</h2>
-        <div class="descritpion">
-            <p>10 módulos</p>
-            <p class="price">Pay</p>
-        </div>
-    </div>
-
-</section>
-
-<div class="modal-overlay">
-    <div class="modal-content">
-        <div class="close-modal">
-            <i class="material-icons"> cancel </i>
-        </div>
-        <iframe src="" frameborder="0"></iframe>
-    </div>
-</div>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 {% endblock %}

@@ -106,11 +106,12 @@ body{
 }
 
 .card-content h2{
-    font-size: 0;
+    margin-top: 10vh;
+    font-size: 18;
 }
 
 .descritpion{
-    margin-top: 10vh;
+    margin-top: 1vh;
     color: var(--color-rocket);
 }
 

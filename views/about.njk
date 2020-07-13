@@ -8,15 +8,14 @@
 
     <div class="contaneir">
         <div class="img-content">
-            <img src="assets/logo_med_rocketseat.jpg" alt="">
+            <img src="assets/{{about.avatar_url}}" alt="Cursos da {{about.name}}">
         </div>
-        <h1>Rocketseat</h1>
-        <p>Uma breve descrição da empresa, ma breve descrição da empresa ma breve descrição da empresa.
-        </p>
+        <h1>{{about.name}}</h1>
+        <p>{{about.description}}</p>
         <ul>
-            <li>Starter</li>
-            <li>Launchbase</li>
-            <li>GoStack</li>
+            <li>{{about.courses.starter}}</li>
+            <li>{{about.courses.launchbase}}</li>
+            <li>{{about.courses.gostack}}</li>
         </ul>
     </div>
 

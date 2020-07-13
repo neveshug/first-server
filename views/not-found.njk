@@ -7,13 +7,9 @@
 {% block content%}
 <div class="contaneir">
         <div class="img-content">
-            <img src="https://miro.medium.com/max/1170/1*BWXSCXSkkY9juccNWbAfxg.png" alt="">
+            <img src="{{dataFound.avatarUrlError}}" alt="Error">
         </div>
-        <h1>Erro 404</h1>
-        <ol>
-            <li>“Desligue seu computador.."</li>
-            <li>"Abra a porta e vá lá fora.."</li>
-            <li>"Mova suas pernas em qualquer direção."</li>
-        </ol>
+        <h1>{{dataFound.codError}}</h1>
+        <p>{{dataFound.errorDescription}}</p>
     </div>
 {% endblock %}
